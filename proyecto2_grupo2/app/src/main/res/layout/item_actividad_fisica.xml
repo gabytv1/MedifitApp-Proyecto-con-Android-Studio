@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Fecha de la actividad -->
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <!-- Nombre de la Actividad Física -->
+    <TextView
+        android:id="@+id/textActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actividad"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- Duración en minutos -->
+    <TextView
+        android:id="@+id/textDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duración"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Horario (Mañana, Tarde, Noche) -->
+    <TextView
+        android:id="@+id/textHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horario"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Vista.VistaCitaMedica.FormularioCitaActivity">
+
+    <!-- Título de la Cita -->
+    <TextView
+        android:id="@+id/tvTituloCita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título de la Cita"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etTituloCita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un título breve"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Elegir Doctor -->
+    <TextView
+        android:id="@+id/tvElegirDoctor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Elegir Doctor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etTituloCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spElegirDoctor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvElegirDoctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Fecha y Hora -->
+    <TextView
+        android:id="@+id/tvFechaHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha y Hora"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/spElegirDoctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etFechaHora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese fecha y hora (01/01/2025 14:00)"
+        android:inputType="datetime"
+        app:layout_constraintTop_toBottomOf="@id/tvFechaHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardarCita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cita"
+
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/etFechaHora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón Cancelar -->
+    <Button
+        android:id="@+id/btnCancelarCita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardarCita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

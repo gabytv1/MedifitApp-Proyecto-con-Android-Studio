@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo"
+        android:roundIcon="@mipmap/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Grupo2Proyecto"
+        tools:targetApi="31">
+        <activity
+            android:name=".Vista.VistaNota.AdministrarNotasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaNota.FormularioNotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaActividadFisica.ListaActividadFisicaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaActividadFisica.RegistrarActividadActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Vista.VistaCitaMedica.FormularioCitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaCitaMedica.AdministrarCitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaMedicamento.RecordatorioMedicina"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaMedicamento.RecargaMedicinaActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Vista.vistaMedicamento.EliminarMedicamentoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaMedicamento.FormularioMedicamento"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaMedicamento.ListaMedicamentosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaMedico.AgregarMedicoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaMedico.AdministrarMedicoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaMedicamento.AdministarMedicamentoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaPerfil.DetallesPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaPerfil.CrearPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.vistaPerfil.SeleccionarPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

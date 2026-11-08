@@ -1,0 +1,13 @@
+<resources>
+
+    <string-array name="presentacion_medicamentos">
+        <item>Pastilla</item>
+        <item>Inyección</item>
+        <item>Solución</item>
+        <item>Gotas</item>
+        <item>Inhalador</item>
+        <item>Polvo</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir Nota de Salud"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Nota sobre la salud -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nota sobre tu salud:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etNotaSalud"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Ejemplo: dolor de cabeza, fiebre, cansancio..."
+        android:background="@android:drawable/editbox_background"
+        android:padding="8dp"
+        android:gravity="top"
+        android:inputType="textCapSentences"
+        android:minLines="4"/>
+
+    <!-- Fecha de la nota -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de la nota:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etFechaActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mm/dd/yyyy"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@android:drawable/editbox_background"
+        android:drawableRight="@android:drawable/ic_menu_my_calendar"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Hora de la nota -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de la nota:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/etHoraNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="--:-- --"
+        android:focusable="false"
+        android:clickable="true"
+        android:background="@android:drawable/editbox_background"
+        android:drawableRight="@android:drawable/ic_menu_recent_history"
+        android:padding="10dp"/>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardarNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6D4CAF"
+        android:text="Guardar Nota"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Botón Cancelar -->
+    <Button
+        android:id="@+id/btnCancelarac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#673AB7"
+        android:text="Cancelar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

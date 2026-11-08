@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="184dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="19dp"
+        android:text="Detalles del Perfil"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPerfilInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPerfilInfo"
+        android:layout_width="311dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="96dp"
+        android:text="Nombre: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/admiMedicamento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+    <Button
+        android:id="@+id/buttonRegresarMenu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="106dp"
+        android:onClick="volverAlMenuPrincipal"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEliminarPerfil" />
+
+    <Button
+        android:id="@+id/administrarCitas"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Administrar citas medicas"
+        app:layout_constraintBottom_toTopOf="@+id/administrarActFisica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/administrarMedico" />
+
+    <Button
+        android:id="@+id/administrarActFisica"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Administrar Actividad Fisica"
+        app:layout_constraintBottom_toTopOf="@+id/administrarSalud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/administrarCitas" />
+
+    <Button
+        android:id="@+id/admiMedicamento"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Administrar Medicamento"
+        app:layout_constraintBottom_toTopOf="@+id/administrarMedico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPerfilInfo" />
+
+    <Button
+        android:id="@+id/administrarMedico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Administar Medico"
+        app:layout_constraintBottom_toTopOf="@+id/administrarCitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admiMedicamento" />
+
+    <Button
+        android:id="@+id/administrarSalud"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Administrar Notas de Salud"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEliminarPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/administrarActFisica" />
+
+    <Button
+        android:id="@+id/buttonEliminarPerfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:text="Eliminar Perfil"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegresarMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/administrarSalud" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="buttonRegresarMenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

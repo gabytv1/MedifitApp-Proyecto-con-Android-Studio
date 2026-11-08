@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:context=".Vista.VistaActividadFisica.RegistrarActividadActivity">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar Actividad Física"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:paddingBottom="20dp" />
+
+    <!-- Fecha de la actividad -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de la actividad:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp" />
+
+    <EditText
+        android:id="@+id/etFechaActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mm/dd/yyyy"
+        android:focusable="false"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Actividad física -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actividad física:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp" />
+
+    <Spinner
+        android:id="@+id/spActividadFisica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Duración en minutos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duración en minutos:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp" />
+
+    <EditText
+        android:id="@+id/etDuracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Ingrese duración en minutos"
+        android:background="@android:drawable/editbox_background"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <!-- Horario -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horario:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp" />
+
+    <Spinner
+        android:id="@+id/spHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Botón de Registrar Actividad -->
+    <Button
+        android:id="@+id/btnRegistrarActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Actividad"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="#4CAF50"
+        android:layout_marginTop="20dp"
+        android:padding="12dp" />
+
+</LinearLayout>

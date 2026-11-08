@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vista.vistaMedicamento.AdministarMedicamentoActivity">
+
+    <!-- Botón: Lista Medicamento -->
+
+    <!-- Botón: Eliminar Medicamento -->
+
+    <!-- Botón: Registrar Toma -->
+
+    <!-- Botón: Recarga de Medicina -->
+
+    <!-- Botón: Recordatorio de Recargar Medicina --><![CDATA[
+
+
+
+
+
+    >
+
+
+
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:id="@+id/btnrecargaMedicina"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:text="Recarga de Medicina"
+        app:layout_constraintBottom_toTopOf="@+id/recordatorioRecargar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eliminarMedicamento" />
+
+    <Button
+        android:id="@+id/recordatorioRecargar"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:text="Recordatorio de Recargar Medicina"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegresarMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrecargaMedicina" />
+
+    <Button
+        android:id="@+id/listaMedicamento"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:text="Lista Medicamento"
+        app:layout_constraintBottom_toTopOf="@+id/eliminarMedicamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/eliminarMedicamento"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:text="Eliminar Medicamento"
+        app:layout_constraintBottom_toTopOf="@+id/btnrecargaMedicina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaMedicamento" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="310dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="86dp"
+        android:gravity="center"
+        android:text="Adminstar Medicamento"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/listaMedicamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegresarMenu"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="181dp"
+        android:onClick="volverAlMenuPrincipal"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordatorioRecargar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
